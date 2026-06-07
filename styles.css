@@ -972,6 +972,8 @@ body {
 }
 .modal-block .modal-text { margin: 0; }
 
+.modal-cta { text-align: center; margin: 14px 0; }
+
 .activity-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
