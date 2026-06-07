@@ -56,7 +56,7 @@
                      pix: '#', card: '#',
                      pixQR: 'imgs/qr_code/refugio_beira_mar.jpeg',
                      pixCode: '00020126550014BR.GOV.BCB.PIX0111415715908030218Presente casamento52040000530398654072000.005802BR5925LUCAS PEREIRA GARCIA DUAR6009SAO PAULO622605225EKPJPYDRzhhUFBFwZNTCf6304136B' },
-    livre:         { name: 'Contribuir com outro valor',                  price: null,
+    livre:         { name: 'Contribuir com valor livre',                  price: null,
                      pix: '#', card: '#',
                      pixQR: 'imgs/qr_code/valor_livre.jpeg',
                      pixCode: '00020126550014BR.GOV.BCB.PIX0111415715908030218Presente casamento5204000053039865802BR5925LUCAS PEREIRA GARCIA DUAR6009SAO PAULO622605226AKfaN24MvlHshl5spLkrI630440B3' },
