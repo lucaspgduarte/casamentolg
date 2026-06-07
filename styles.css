@@ -972,7 +972,60 @@ body {
 }
 .modal-block .modal-text { margin: 0; }
 
-.modal-cta { text-align: center; margin: 14px 0; }
+/* cartao de reserva/desconto do Club Med (modal Hospedagem) */
+.lodging-deal {
+  margin: 22px 0;
+  padding: 28px 26px 26px;
+  text-align: center;
+  background: rgba(33, 114, 128, 0.05);
+  border: 1px solid rgba(33, 114, 128, 0.18);
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
+}
+.lodging-deal-label {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 13.5px;
+  letter-spacing: 0.16em;
+  text-transform: lowercase;
+  color: var(--ink-soft);
+  margin: 0 0 10px;
+}
+.lodging-deal-code {
+  font-family: var(--font-display);
+  font-size: 38px;
+  letter-spacing: 0.3em;
+  text-indent: 0.3em;
+  color: var(--teal);
+  line-height: 1;
+  margin: 0 0 14px;
+}
+.lodging-deal-note {
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--ink);
+  line-height: 1.55;
+  max-width: 330px;
+  margin: 0 auto 22px;
+}
+.lodging-deal-btn {
+  display: inline-block;
+  padding: 13px 34px;
+  background: var(--teal);
+  color: var(--cream);
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  transition: background-color .25s ease, transform .25s ease;
+}
+.lodging-deal-btn:hover {
+  background: var(--deep);
+  transform: translateY(-1px);
+}
 
 .activity-grid {
   display: grid;
@@ -1733,4 +1786,7 @@ body.modal-open { overflow: hidden; }
   .gift-pay-label  { font-size: 20px; }
   /* menu fixo mais alto no mobile: mais folga ao ancorar em #trajes */
   .dresscode { scroll-margin-top: 140px; }
+  /* cartao de desconto cabe melhor em telas estreitas */
+  .lodging-deal { padding: 24px 18px; }
+  .lodging-deal-code { font-size: 30px; letter-spacing: 0.22em; text-indent: 0.22em; }
 }
