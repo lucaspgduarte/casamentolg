@@ -130,17 +130,19 @@ body {
 }
 
 @media (max-width: 720px) {
+  /* monograma na 1a linha (largura toda) e 6 links em 2 linhas de 3 */
   .nav-inner {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
     align-items: center;
-    padding: 10px 16px;
-    gap: 6px 14px;
+    column-gap: 8px;
+    row-gap: 12px;
+    padding: 12px 14px;
   }
   .nav-left, .nav-right { display: contents; }
-  .nav-monogram { order: -1; flex-basis: 100%; justify-content: center; }
-  .nav a { font-size: 12.5px; margin: 0; letter-spacing: .14em; }
+  .nav-monogram { grid-column: 1 / -1; order: -1; }
+  .nav a { font-size: 12px; margin: 0; letter-spacing: .08em; white-space: nowrap; }
   .nav-mono-img { height: 50px; }
 }
 
@@ -350,7 +352,7 @@ body {
   }
   .hero-photo { order: -1; }
   .hero-photo-bg { background-position: center 25%; }
-  .hero-text { padding: 70px 28px 80px; }
+  .hero-text { padding: 32px 28px 56px; }
   .hero-leaf-1 { width: 80px; top: 50%; left: 2%; }
   .hero-leaf-2 { width: 70px; bottom: 4%; right: 3%; }
 }
