@@ -274,6 +274,8 @@ body {
 .hero-slide.is-active { opacity: 1; }
 /* foto vertical: ancora mais embaixo para nao cortar o casal */
 .hero-slide-couple { background-position: center 78%; }
+/* casal levemente a esquerda: desloca a ancora horizontal */
+.hero-slide-louvre { background-position: 43% 30%; }
 
 .hero-dots {
   position: absolute;
