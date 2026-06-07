@@ -1374,42 +1374,6 @@ body.modal-open { overflow: hidden; }
   .gift-card-price { font-size: 20px; }
 }
 
-.gifts-thanks {
-  text-align: center;
-  font-family: var(--font-body);
-  font-style: italic;
-  font-size: 20px;
-  color: var(--ink-soft);
-  line-height: 1.7;
-  margin: 80px auto 0;
-  max-width: 500px;
-  font-weight: 300;
-}
-.gifts-thanks-sub {
-  display: inline-block;
-  margin-top: 10px;
-  font-family: var(--font-display);
-  font-style: normal;
-  letter-spacing: 0.5em;
-  color: var(--teal);
-  font-size: 18px;
-}
-
-/* faixa teal de fechamento, separa os presentes do rodape */
-.gifts-closing {
-  padding: 90px 24px;
-  text-align: center;
-}
-.gifts-closing .gifts-thanks {
-  margin: 0 auto;
-  color: var(--mist);
-  position: relative;
-  z-index: 2;
-}
-.gifts-closing .gifts-thanks-sub {
-  color: var(--cream);
-  letter-spacing: 0.18em;
-}
 
 /* ============================================
    Modal de presente
@@ -1744,7 +1708,6 @@ body.modal-open { overflow: hidden; }
   .activity-text   { font-size: 18px; }
   .gifts-intro     { font-size: 20.5px; }
   .gifts-sub       { font-size: 15.5px; }
-  .gifts-thanks    { font-size: 18px; }
   .gift-card-name  { font-size: 18px; }
   .gift-card-price { font-size: 18px; }
 
