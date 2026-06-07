@@ -13,7 +13,9 @@
   // antes de ter os links do MP prontos.
   const GIFTS = {
     cafe:          { name: 'Café da manhã em Cala Brandinchi',            price: 120,
-                     pix: '#', card: '#' },
+                     pix: '#', card: '#',
+                     pixQR: 'imgs/qr_code/cafe_manha.jpeg',
+                     pixCode: '00020126550014BR.GOV.BCB.PIX0111415715908030218Presente casamento5204000053039865406120.005802BR5925LUCAS PEREIRA GARCIA DUAR6009SAO PAULO622605225V80QfAJYeu76K4Zv3a6BQ63046414' },
     aperitivo:     { name: 'Aperitivo ao pôr do sol em Cagliari',         price: 180,
                      pix: '#', card: '#' },
     vinhos:        { name: 'Vinhos da Costa Esmeralda',                   price: 220,
@@ -72,9 +74,36 @@
   const msgCount   = document.getElementById('gift-message-count');
   const pixBtn     = document.getElementById('gift-pay-pix');
   const cardBtn    = document.getElementById('gift-pay-card');
+  const payButtons = document.getElementById('gift-payment-buttons');
+  const pixPanel   = document.getElementById('gift-pix-panel');
+  const pixQRImg   = document.getElementById('gift-pix-qr');
+  const pixCodeEl  = document.getElementById('gift-pix-code');
+  const pixCopyBtn = document.getElementById('gift-pix-copy');
+  const pixBackBtn = document.getElementById('gift-pix-back');
 
   const NAME_MAX = 100;
   const MSG_MAX  = 2000;
+
+  function hidePixPanel() {
+    pixPanel.hidden = true;
+    payButtons.hidden = false;
+    hintEl.hidden = false;
+    pixCopyBtn.textContent = 'Copiar código';
+    pixCopyBtn.classList.remove('is-copied');
+  }
+
+  function showPixPanel() {
+    if (!currentGift || !currentGift.pixCode) {
+      hintEl.textContent = 'O PIX deste presente ainda está sendo preparado. Use o cartão ou tente novamente em breve.';
+      return;
+    }
+    pixQRImg.src = currentGift.pixQR || '';
+    pixQRImg.style.display = currentGift.pixQR ? '' : 'none';
+    pixCodeEl.textContent = currentGift.pixCode;
+    payButtons.hidden = true;
+    hintEl.hidden = true;
+    pixPanel.hidden = false;
+  }
 
   function updateCounts() {
     nameCount.textContent = nameInput.value.length + '/' + NAME_MAX;
@@ -148,6 +177,7 @@
     msgInput.value = '';
     updateCounts();
     refreshButtons();
+    hidePixPanel();
 
     backdrop.hidden = false;
     modal.hidden = false;
@@ -188,6 +218,12 @@
       metodo: metodo,
       ts: new Date().toISOString(),
     });
+
+    // PIX nao navega: abre o painel com QR + copia e cola
+    if (metodo === 'pix') {
+      e.preventDefault();
+      showPixPanel();
+    }
   }
 
   // ---------- Eventos ----------
@@ -204,6 +240,33 @@
 
   pixBtn.addEventListener('click', (e) => handlePayClick('pix', e));
   cardBtn.addEventListener('click', (e) => handlePayClick('card', e));
+
+  pixBackBtn.addEventListener('click', hidePixPanel);
+
+  pixCopyBtn.addEventListener('click', () => {
+    const code = pixCodeEl.textContent;
+    const done = () => {
+      pixCopyBtn.textContent = 'Código copiado!';
+      pixCopyBtn.classList.add('is-copied');
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(code).then(done).catch(() => fallbackCopy(code, done));
+    } else {
+      fallbackCopy(code, done);
+    }
+  });
+
+  function fallbackCopy(text, done) {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    ta.setAttribute('readonly', '');
+    ta.style.position = 'absolute';
+    ta.style.left = '-9999px';
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand('copy'); done(); } catch (_) { /* silencioso */ }
+    document.body.removeChild(ta);
+  }
 
   backdrop.addEventListener('click', closeModal);
   modal.addEventListener('click', (e) => {

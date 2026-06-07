@@ -228,8 +228,8 @@
       Ao clicar em PIX ou Cartão, sua mensagem é enviada para nós junto com o pagamento. Tudo é processado com segurança pelo Mercado Pago.
     </p>
 
-    <div class="gift-payment-buttons">
-      <a class="gift-pay-btn gift-pay-pix" id="gift-pay-pix" href="#" target="_blank" rel="noopener" aria-disabled="true">
+    <div class="gift-payment-buttons" id="gift-payment-buttons">
+      <a class="gift-pay-btn gift-pay-pix" id="gift-pay-pix" href="#" rel="noopener" aria-disabled="true">
         <span class="gift-pay-label">PIX</span>
         <span class="gift-pay-sub">à vista</span>
       </a>
@@ -237,6 +237,24 @@
         <span class="gift-pay-label">Cartão</span>
         <span class="gift-pay-sub">parcelado em até 12x</span>
       </a>
+    </div>
+
+    <!-- Painel PIX: aparece ao clicar em PIX -->
+    <div class="gift-pix-panel" id="gift-pix-panel" hidden>
+      <p class="gift-pix-title">Pagamento via PIX</p>
+      <div class="gift-pix-options">
+        <div class="gift-pix-option">
+          <p class="gift-pix-opt-label">1 · Escaneie o QR code</p>
+          <img id="gift-pix-qr" class="gift-pix-qr" src="" alt="QR code para pagamento via PIX">
+        </div>
+        <div class="gift-pix-divider" aria-hidden="true"><span>ou</span></div>
+        <div class="gift-pix-option">
+          <p class="gift-pix-opt-label">2 · Copie e cole o código</p>
+          <code id="gift-pix-code" class="gift-pix-code"></code>
+          <button type="button" id="gift-pix-copy" class="gift-pix-copy-btn">Copiar código</button>
+        </div>
+      </div>
+      <button type="button" id="gift-pix-back" class="gift-pix-back">‹ voltar</button>
     </div>
 
     <p class="modal-hint" id="gift-modal-hint">
