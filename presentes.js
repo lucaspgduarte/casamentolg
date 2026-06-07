@@ -53,7 +53,9 @@
                      pixQR: 'imgs/qr_code/experiencia_gastronomica.jpeg',
                      pixCode: '00020126550014BR.GOV.BCB.PIX0111415715908030218Presente casamento52040000530398654071200.005802BR5925LUCAS PEREIRA GARCIA DUAR6009SAO PAULO622605227Ojw6eANzxxlJr86pznFXP6304C803' },
     refugio:       { name: 'Refúgio à beira-mar na lua de mel',           price: 2000,
-                     pix: '#', card: '#' },
+                     pix: '#', card: '#',
+                     pixQR: 'imgs/qr_code/refugio_beira_mar.jpeg',
+                     pixCode: '00020126550014BR.GOV.BCB.PIX0111415715908030218Presente casamento52040000530398654072000.005802BR5925LUCAS PEREIRA GARCIA DUAR6009SAO PAULO622605225EKPJPYDRzhhUFBFwZNTCf6304136B' },
     livre:         { name: 'Contribuir com outro valor',                  price: null,
                      pix: '#', card: '#' },
   };
