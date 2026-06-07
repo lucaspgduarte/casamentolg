@@ -179,7 +179,7 @@
     } else if (currentGift.price === null) {
       hintEl.textContent = 'O valor é livre: você escolhe a quantia na hora de pagar.';
     } else {
-      hintEl.textContent = 'Ao clicar em PIX, mostramos o QR code e o código copia e cola.';
+      hintEl.textContent = 'Escolha a opção de pagamento e sua mensagem será enviada para nós.';
     }
   }
 
