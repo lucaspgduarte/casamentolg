@@ -33,7 +33,7 @@ body {
   background: var(--cream);
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
-  font-size: 22.5px;
+  font-size: clamp(16px, 4.6vw, 22.5px);
 }
 
 /* ============================================
@@ -130,11 +130,18 @@ body {
 }
 
 @media (max-width: 720px) {
-  .nav-inner { padding: 12px 18px; gap: 12px; grid-template-columns: 1fr auto 1fr; }
-  .nav a { font-size: 13.75px; margin: 0 5px; letter-spacing: .16em; }
-  .nav-mono-img { height: 36px; }
-  .nav-left { display: none; }
-  .nav-right { text-align: right; }
+  .nav-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 16px;
+    gap: 6px 14px;
+  }
+  .nav-left, .nav-right { display: contents; }
+  .nav-monogram { order: -1; flex-basis: 100%; justify-content: center; }
+  .nav a { font-size: 12.5px; margin: 0; letter-spacing: .14em; }
+  .nav-mono-img { height: 34px; }
 }
 
 /* ============================================
