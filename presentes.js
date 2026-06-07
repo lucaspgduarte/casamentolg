@@ -57,7 +57,9 @@
                      pixQR: 'imgs/qr_code/refugio_beira_mar.jpeg',
                      pixCode: '00020126550014BR.GOV.BCB.PIX0111415715908030218Presente casamento52040000530398654072000.005802BR5925LUCAS PEREIRA GARCIA DUAR6009SAO PAULO622605225EKPJPYDRzhhUFBFwZNTCf6304136B' },
     livre:         { name: 'Contribuir com outro valor',                  price: null,
-                     pix: '#', card: '#' },
+                     pix: '#', card: '#',
+                     pixQR: 'imgs/qr_code/valor_livre.jpeg',
+                     pixCode: '00020126550014BR.GOV.BCB.PIX0111415715908030218Presente casamento5204000053039865802BR5925LUCAS PEREIRA GARCIA DUAR6009SAO PAULO622605226AKfaN24MvlHshl5spLkrI630440B3' },
   };
 
   // ---------- HOOK DE ENVIO DA MENSAGEM ----------
@@ -118,7 +120,12 @@
       return;
     }
     const valor = getValor();
-    pixGiftEl.textContent = currentGift.name + ' · R$ ' + valor.toLocaleString('pt-BR');
+    if (currentGift.price === null) {
+      // PIX sem valor fixo: a pessoa digita o valor no app ao pagar
+      pixGiftEl.textContent = currentGift.name + ' · informe o valor ao pagar';
+    } else {
+      pixGiftEl.textContent = currentGift.name + ' · R$ ' + valor.toLocaleString('pt-BR');
+    }
     pixQRImg.src = currentGift.pixQR || '';
     pixQRImg.style.display = currentGift.pixQR ? '' : 'none';
     pixCodeEl.textContent = currentGift.pixCode;
