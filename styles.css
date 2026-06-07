@@ -1592,3 +1592,55 @@ body.modal-open { overflow: hidden; }
 @media (max-width: 480px) {
   .gift-payment-buttons { grid-template-columns: 1fr; }
 }
+
+/* ============================================
+   TIPOGRAFIA MOBILE — reduz textos no celular
+   (desktop intacto; este bloco fica por ultimo
+   para vencer por ordem de cascata)
+   ============================================ */
+@media (max-width: 600px) {
+  /* titulos */
+  .hero-names      { font-size: 38px; }
+  .section-title   { font-size: 30px; margin-bottom: 28px; }
+  .subsection-title{ font-size: 22px; }
+  .hero-date       { font-size: 16px; letter-spacing: 0.3em; }
+  .hero-place      { font-size: 15px; }
+  .date-big        { font-size: 23px; }
+  .time-big        { font-size: 17px; }
+  .venue-name      { font-size: 18px; }
+  .dress-title     { font-size: 15px; }
+  .modal-title     { font-size: 24px; margin-bottom: 18px; }
+  .footer-names    { font-size: 24px; }
+  .cd-num          { font-size: 42px; }
+  .gift-modal-price{ font-size: 28px; }
+
+  /* corpo de texto */
+  .welcome-text    { font-size: 15.5px; }
+  .rsvp-text       { font-size: 15.5px; }
+  .modal-text      { font-size: 15.5px; }
+  .modal-list li   { font-size: 15px; }
+  .dress-text      { font-size: 15.5px; }
+  .tips-sub        { font-size: 15px; }
+  .venue-addr      { font-size: 15px; }
+  .activity-text   { font-size: 15px; }
+  .gifts-intro     { font-size: 15.5px; }
+  .gifts-sub       { font-size: 14px; }
+  .gifts-thanks    { font-size: 15px; }
+  .gift-card-name  { font-size: 17px; }
+  .gift-card-price { font-size: 17px; }
+
+  /* rotulos, kickers, botoes */
+  .kicker          { font-size: 13px; }
+  .hero-eyebrow    { font-size: 13px; }
+  .cd-label        { font-size: 12.5px; }
+  .modal-kicker    { font-size: 12.5px; }
+  .modal-hint      { font-size: 13.5px; }
+  .modal-block-label { font-size: 12.5px; }
+  .activity-label  { font-size: 14px; }
+  .link-pill       { font-size: 12.5px; }
+  .cta-btn         { font-size: 12.5px; }
+  .ghost-btn       { font-size: 13px; }
+  .tile-title      { font-size: 14px; }
+  .footer-date     { font-size: 13px; }
+  .gift-pay-label  { font-size: 17px; }
+}
