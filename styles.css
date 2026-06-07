@@ -124,7 +124,7 @@ body {
 }
 .nav-monogram::after { display: none; }
 .nav-mono-img {
-  height: 44px;
+  height: 64px;
   width: auto;
   display: block;
 }
@@ -141,7 +141,7 @@ body {
   .nav-left, .nav-right { display: contents; }
   .nav-monogram { order: -1; flex-basis: 100%; justify-content: center; }
   .nav a { font-size: 12.5px; margin: 0; letter-spacing: .14em; }
-  .nav-mono-img { height: 34px; }
+  .nav-mono-img { height: 50px; }
 }
 
 /* ============================================
