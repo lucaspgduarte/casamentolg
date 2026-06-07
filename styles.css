@@ -580,6 +580,7 @@ body {
 
 .dresscode {
   margin-top: 40px;
+  scroll-margin-top: 96px; /* compensa o menu fixo ao ancorar em #trajes */
 }
 
 .dress-layout {
