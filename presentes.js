@@ -166,19 +166,17 @@
 
   function refreshButtons() {
     const nome = nameInput.value.trim();
-    const valor = getValor();
-    const valorOk = currentGift.price !== null ? true : valor >= 10;
-    const liberado = nome.length > 0 && valorOk;
+    const liberado = nome.length > 0;
 
     setEnabled(pixBtn,  currentGift.pix,  liberado);
     setEnabled(cardBtn, currentGift.card, liberado);
 
     if (!nome) {
       hintEl.textContent = 'Preencha seu nome para liberar os botões de pagamento.';
-    } else if (!valorOk) {
-      hintEl.textContent = 'Informe um valor (mínimo R$ 10) para continuar.';
+    } else if (currentGift.price === null) {
+      hintEl.textContent = 'O valor é livre: você escolhe a quantia na hora de pagar.';
     } else {
-      hintEl.textContent = 'Ao clicar em PIX ou Cartão, sua mensagem será enviada junto com o pagamento.';
+      hintEl.textContent = 'Ao clicar em PIX, mostramos o QR code e o código copia e cola.';
     }
   }
 
@@ -192,13 +190,11 @@
 
     titleEl.textContent = gift.name;
 
+    amountBlock.hidden = true;
+    priceEl.hidden = false;
     if (gift.price === null) {
-      priceEl.hidden = true;
-      amountBlock.hidden = false;
-      amountInput.value = '';
+      priceEl.textContent = 'Valor livre';
     } else {
-      priceEl.hidden = false;
-      amountBlock.hidden = true;
       priceEl.textContent = 'R$ ' + gift.price.toLocaleString('pt-BR');
     }
 
@@ -241,7 +237,7 @@
     sendMessage({
       gift: currentGiftId,
       gift_nome: currentGift.name,
-      valor: getValor(),
+      valor: currentGift.price === null ? '' : currentGift.price,
       nome: nameInput.value.trim(),
       mensagem: msgInput.value.trim(),
       metodo: metodo,
