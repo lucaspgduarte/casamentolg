@@ -12,7 +12,7 @@
   // mas não navega para lugar nenhum — útil para testar a integração com o Sheets
   // antes de ter os links do MP prontos.
   const GIFTS = {
-    cafe:          { name: 'Café da manhã em Cala Brandinchi',            price: 120,
+    cafe:          { name: 'Café da manhã em Taormina',                   price: 120,
                      pix: '#', card: '#',
                      pixQR: 'imgs/qr_code/cafe_manha.jpeg',
                      pixCode: '00020126550014BR.GOV.BCB.PIX0111415715908030218Presente casamento5204000053039865406120.005802BR5925LUCAS PEREIRA GARCIA DUAR6009SAO PAULO622605225V80QfAJYeu76K4Zv3a6BQ63046414' },
