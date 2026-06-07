@@ -16,7 +16,7 @@
                      pix: '#', card: '#',
                      pixQR: 'imgs/qr_code/cafe_manha.jpeg',
                      pixCode: '00020126550014BR.GOV.BCB.PIX0111415715908030218Presente casamento5204000053039865406120.005802BR5925LUCAS PEREIRA GARCIA DUAR6009SAO PAULO622605225V80QfAJYeu76K4Zv3a6BQ63046414' },
-    aperitivo:     { name: 'Aperitivo ao pôr do sol em Cagliari',         price: 180,
+    aperitivo:     { name: 'Aperitivo ao pôr do sol em Ortigia',          price: 180,
                      pix: '#', card: '#' ,
                     pixQR: 'imgs/qr_code/aperitivo_Ortigia.jpeg',
                     pixCode: '00020126550014BR.GOV.BCB.PIX0111415715908030218Presente casamento5204000053039865406180.005802BR5925LUCAS PEREIRA GARCIA DUAR6009SAO PAULO622605224qL3xPqt0E4X7fDhsLP0Vx6304BCC6' },
