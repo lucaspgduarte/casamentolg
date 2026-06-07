@@ -33,7 +33,7 @@ body {
   background: var(--cream);
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
-  font-size: clamp(11px, 2.9vw, 22.5px);
+  font-size: 22.5px;
 }
 
 /* ============================================
@@ -1599,48 +1599,51 @@ body.modal-open { overflow: hidden; }
    para vencer por ordem de cascata)
    ============================================ */
 @media (max-width: 600px) {
+  /* base do corpo */
+  body { font-size: 20px; }
+
   /* titulos */
-  .hero-names      { font-size: 29px; }
-  .section-title   { font-size: 23px; margin-bottom: 24px; }
-  .subsection-title{ font-size: 17px; }
-  .hero-date       { font-size: 12px; letter-spacing: 0.3em; }
-  .hero-place      { font-size: 11.5px; }
-  .date-big        { font-size: 17px; }
-  .time-big        { font-size: 13px; }
-  .venue-name      { font-size: 14px; }
-  .dress-title     { font-size: 11.5px; }
-  .modal-title     { font-size: 18px; margin-bottom: 16px; }
-  .footer-names    { font-size: 18px; }
-  .cd-num          { font-size: 32px; }
-  .gift-modal-price{ font-size: 21px; }
+  .hero-names      { font-size: 49.5px; }
+  .section-title   { font-size: 43px; margin-bottom: 36px; }
+  .subsection-title{ font-size: 27px; }
+  .hero-date       { font-size: 25px; }
+  .hero-place      { font-size: 17px; }
+  .date-big        { font-size: 29px; }
+  .time-big        { font-size: 25px; }
+  .venue-name      { font-size: 25px; }
+  .dress-title     { font-size: 22.5px; }
+  .modal-title     { font-size: 31px; margin-bottom: 23px; }
+  .footer-names    { font-size: 31px; }
+  .cd-num          { font-size: 54px; }
+  .gift-modal-price{ font-size: 34px; }
 
   /* corpo de texto */
-  .welcome-text    { font-size: 12px; }
-  .rsvp-text       { font-size: 12px; }
-  .modal-text      { font-size: 12px; }
-  .modal-list li   { font-size: 11.5px; }
-  .dress-text      { font-size: 12px; }
-  .tips-sub        { font-size: 11.5px; }
-  .venue-addr      { font-size: 11.5px; }
-  .activity-text   { font-size: 11.5px; }
-  .gifts-intro     { font-size: 12px; }
-  .gifts-sub       { font-size: 11px; }
-  .gifts-thanks    { font-size: 11.5px; }
-  .gift-card-name  { font-size: 13px; }
-  .gift-card-price { font-size: 13px; }
+  .welcome-text    { font-size: 21.5px; }
+  .rsvp-text       { font-size: 20px; }
+  .modal-text      { font-size: 19px; }
+  .modal-list li   { font-size: 18.5px; }
+  .dress-text      { font-size: 19px; }
+  .tips-sub        { font-size: 19px; }
+  .venue-addr      { font-size: 19px; }
+  .activity-text   { font-size: 18px; }
+  .gifts-intro     { font-size: 20.5px; }
+  .gifts-sub       { font-size: 15.5px; }
+  .gifts-thanks    { font-size: 18px; }
+  .gift-card-name  { font-size: 18px; }
+  .gift-card-price { font-size: 18px; }
 
   /* rotulos, kickers, botoes */
-  .kicker          { font-size: 10px; }
-  .hero-eyebrow    { font-size: 10px; }
-  .cd-label        { font-size: 9.5px; }
-  .modal-kicker    { font-size: 9.5px; }
-  .modal-hint      { font-size: 10px; }
-  .modal-block-label { font-size: 9.5px; }
-  .activity-label  { font-size: 10.5px; }
-  .link-pill       { font-size: 9.5px; }
-  .cta-btn         { font-size: 9.5px; }
-  .ghost-btn       { font-size: 10px; }
-  .tile-title      { font-size: 10.5px; }
-  .footer-date     { font-size: 10px; }
-  .gift-pay-label  { font-size: 13px; }
+  .kicker          { font-size: 18px; }
+  .hero-eyebrow    { font-size: 17px; }
+  .cd-label        { font-size: 15.5px; }
+  .modal-kicker    { font-size: 14.5px; }
+  .modal-hint      { font-size: 17px; }
+  .modal-block-label { font-size: 15.5px; }
+  .activity-label  { font-size: 19px; }
+  .link-pill       { font-size: 14.5px; }
+  .cta-btn         { font-size: 14.5px; }
+  .ghost-btn       { font-size: 15.5px; }
+  .tile-title      { font-size: 16px; }
+  .footer-date     { font-size: 17px; }
+  .gift-pay-label  { font-size: 20px; }
 }
