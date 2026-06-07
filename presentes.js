@@ -96,6 +96,7 @@
   const msgCount   = document.getElementById('gift-message-count');
   const pixBtn     = document.getElementById('gift-pay-pix');
   const cardBtn    = document.getElementById('gift-pay-card');
+  const cardSub    = document.getElementById('gift-card-sub');
   const formScreen = document.getElementById('gift-form-screen');
   const pixPanel   = document.getElementById('gift-pix-panel');
   const pixGiftEl  = document.getElementById('gift-pix-gift');
@@ -167,9 +168,11 @@
   function refreshButtons() {
     const nome = nameInput.value.trim();
     const liberado = nome.length > 0;
+    const cardReady = !!currentGift.card && currentGift.card !== '#';
 
     setEnabled(pixBtn,  currentGift.pix,  liberado);
-    setEnabled(cardBtn, currentGift.card, liberado);
+    setEnabled(cardBtn, currentGift.card, liberado && cardReady);
+    cardSub.textContent = cardReady ? 'parcelado em até 12x' : 'em breve';
 
     if (!nome) {
       hintEl.textContent = 'Preencha seu nome para liberar os botões de pagamento.';
