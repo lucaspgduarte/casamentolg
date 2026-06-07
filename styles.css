@@ -1395,6 +1395,22 @@ body.modal-open { overflow: hidden; }
   font-size: 18px;
 }
 
+/* faixa teal de fechamento, separa os presentes do rodape */
+.gifts-closing {
+  padding: 90px 24px;
+  text-align: center;
+}
+.gifts-closing .gifts-thanks {
+  margin: 0 auto;
+  color: var(--mist);
+  position: relative;
+  z-index: 2;
+}
+.gifts-closing .gifts-thanks-sub {
+  color: var(--cream);
+  letter-spacing: 0.18em;
+}
+
 /* ============================================
    Modal de presente
    ============================================ */
