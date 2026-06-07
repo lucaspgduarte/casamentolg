@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lucas e Guilherme · 10.10.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Italiana&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============== NAV ============== -->
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-left">
+      <a href="#home">Home</a>
+      <a href="#casamento">Casamento</a>
+      <a href="#dicas">Dicas</a>
+    </div>
+    <a href="#home" class="nav-monogram" aria-label="Lucas e Guilherme">
+      <img src="imgs/monogram.png" alt="LG" class="nav-mono-img">
+    </a>
+    <div class="nav-right">
+      <a href="#rsvp">RSVP</a>
+      <a href="presentes.html">Presentes</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============== HERO (split layout: texto à esquerda, foto à direita) ============== -->
+<section id="home" class="hero">
+
+  <div class="hero-text paper">
+    <svg class="leaf hero-leaf-1" viewBox="0 0 100 100" aria-hidden="true"><use href="#ginkgo"/></svg>
+    <svg class="leaf hero-leaf-2" viewBox="0 0 100 100" aria-hidden="true"><use href="#ginkgo"/></svg>
+
+    <div class="hero-text-inner">
+      <p class="hero-eyebrow">— save the date —</p>
+
+      <img src="imgs/monogram.png" alt="LG" class="hero-mono-img">
+
+      <h1 class="hero-names">Lucas <span class="amp-display">&amp;</span> Guilherme</h1>
+
+      <div class="hero-rule">
+        <span class="dot"></span>
+        <span class="line"></span>
+        <span class="dot"></span>
+      </div>
+
+      <p class="hero-date">10 · 10 · 2026</p>
+      <p class="hero-place">Club Med Rio das Pedras<br><span class="hero-place-sub">Mangaratiba, Rio de Janeiro</span></p>
+    </div>
+  </div>
+
+  <div class="hero-photo">
+    <div class="hero-slide is-active" style="background-image:url('imgs/hero.jpg')" role="img" aria-label="Lucas e Guilherme em Ravello, Itália"></div>
+    <div class="hero-slide" style="background-image:url('imgs/hero2.jpg')" role="img" aria-label="Em frente à Torre Eiffel, Paris"></div>
+    <div class="hero-slide" style="background-image:url('imgs/hero3.jpg')" role="img" aria-label="No Louvre, Paris"></div>
+    <div class="hero-slide" style="background-image:url('imgs/hero4.jpg')" role="img" aria-label="Em Londres"></div>
+    <div class="hero-photo-overlay"></div>
+    <div class="hero-dots" aria-label="Navegação do carrossel">
+      <button class="hero-dot is-active" data-i="0" aria-label="Foto 1"></button>
+      <button class="hero-dot" data-i="1" aria-label="Foto 2"></button>
+      <button class="hero-dot" data-i="2" aria-label="Foto 3"></button>
+      <button class="hero-dot" data-i="3" aria-label="Foto 4"></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============== WELCOME + COUNTDOWN ============== -->
+<section class="welcome dark">
+  <div class="welcome-inner">
+    <p class="kicker">Sejam bem-vindos!</p>
+    <h2 class="section-title light">Estamos contando os dias</h2>
+
+    <p class="welcome-text">
+      Criamos este espaço para reunir tudo o que vocês precisam saber sobre a celebração desse dia que esperamos há tanto tempo. Aqui vocês vão encontrar informações sobre o casamento, dicas de hospedagem, como chegar até o Club Med Rio das Pedras e tudo mais para que esse fim de semana seja inesquecível para todos nós.
+    </p>
+    <p class="welcome-text welcome-text-italic">
+      Com carinho,<br>
+      <strong>Lucas e Gui</strong>
+    </p>
+
+    <div class="countdown" id="countdown" aria-live="polite">
+      <div class="cd-block">
+        <span class="cd-num" id="cd-days">000</span>
+        <span class="cd-label">dias</span>
+      </div>
+      <div class="cd-sep">·</div>
+      <div class="cd-block">
+        <span class="cd-num" id="cd-hours">00</span>
+        <span class="cd-label">horas</span>
+      </div>
+      <div class="cd-sep">·</div>
+      <div class="cd-block">
+        <span class="cd-num" id="cd-min">00</span>
+        <span class="cd-label">min</span>
+      </div>
+      <div class="cd-sep">·</div>
+      <div class="cd-block">
+        <span class="cd-num" id="cd-sec">00</span>
+        <span class="cd-label">seg</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== O GRANDE DIA ============== -->
+<section id="casamento" class="great-day paper">
+
+  <svg class="leaf leaf-corner-tl" viewBox="0 0 100 100" aria-hidden="true"><use href="#ginkgo"/></svg>
+  <svg class="leaf leaf-corner-br" viewBox="0 0 100 100" aria-hidden="true"><use href="#ginkgo"/></svg>
+
+  <div class="great-day-inner">
+    <p class="kicker dark-kicker">O grande dia do nosso</p>
+    <h2 class="section-title">Casamento</h2>
+
+    <div class="great-day-card">
+      <svg class="rings" viewBox="0 0 140 80" aria-hidden="true">
+        <circle cx="55" cy="40" r="28" fill="none" stroke="currentColor" stroke-width="1.2"/>
+        <circle cx="85" cy="40" r="28" fill="none" stroke="currentColor" stroke-width="1.2"/>
+        <circle cx="55" cy="40" r="32" fill="none" stroke="currentColor" stroke-width="0.5" opacity=".4"/>
+        <circle cx="85" cy="40" r="32" fill="none" stroke="currentColor" stroke-width="0.5" opacity=".4"/>
+      </svg>
+
+      <p class="date-big">Sábado, 10 de outubro de 2026</p>
+      <p class="time-big">às 15h00</p>
+
+      <div class="hero-rule small">
+        <span class="dot"></span>
+        <span class="line"></span>
+        <span class="dot"></span>
+      </div>
+
+      <p class="venue-name">Club Med Rio das Pedras</p>
+      <p class="venue-addr">Estrada do Contorno, s/n — Mangaratiba, Rio de Janeiro</p>
+
+      <a class="link-pill" href="https://maps.google.com/?q=Club+Med+Rio+das+Pedras+Mangaratiba" target="_blank" rel="noopener">Ver no mapa</a>
+    </div>
+
+    <div class="dresscode">
+      <p class="kicker dark-kicker">Trajes</p>
+      <h3 class="subsection-title">Esporte fino — com pé no gramado</h3>
+
+      <div class="dress-layout">
+        <div class="dress-side dress-side-left">
+          <p class="dress-title">Homens</p>
+          <p class="dress-text">
+            Camisa social ou linho (de preferência clara), com calça chino ou social. Blazer é bem-vindo, mas opcional. Gravata não é necessária.
+          </p>
+        </div>
+
+        <div class="dress-illustration">
+          <img src="imgs/casal_web.png" alt="Ilustração de um casal em traje esporte fino, ele de terno claro e ela de vestido verde longo" class="dress-img">
+        </div>
+
+        <div class="dress-side dress-side-right">
+          <p class="dress-title">Mulheres</p>
+          <p class="dress-text">
+            Vestidos claros ou coloridos em tecidos leves e elegantes. Como a cerimônia será no gramado, salto bloco ou rasteiras sofisticadas são super bem-vindos.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== DICAS (tiles que abrem modais) ============== -->
+<section id="dicas" class="tips palm-bg">
+  <div class="tips-inner">
+    <p class="kicker light-kicker">Para o nosso casamento</p>
+    <h2 class="section-title light">Dicas e informações</h2>
+    <p class="tips-sub">Toque em qualquer item para ver mais detalhes.</p>
+
+    <div class="tiles-grid">
+      <button class="tile" data-tip="chegar" aria-label="Como chegar">
+        <img class="tile-icon" src="imgs/icon_chegar.svg" alt="" aria-hidden="true">
+        <span class="tile-title">Como chegar</span>
+      </button>
+
+      <button class="tile" data-tip="hospedagem" aria-label="Hospedagem">
+        <img class="tile-icon" src="imgs/icon_hospedagem.svg" alt="" aria-hidden="true">
+        <span class="tile-title">Hospedagem</span>
+      </button>
+
+      <button class="tile" data-tip="prewedding" aria-label="Pré-wedding">
+        <img class="tile-icon" src="imgs/icon_prewedding.svg" alt="" aria-hidden="true" >
+        <span class="tile-title">Pré-wedding</span>
+      </button>
+
+      <button class="tile" data-tip="cabelo" aria-label="Cabelo e make">
+        <img class="tile-icon" src="imgs/icon_cabelo.svg" alt="" aria-hidden="true">
+        <span class="tile-title">Cabelo e make</span>
+      </button>
+
+      <button class="tile" data-tip="atividades" aria-label="Atividades do resort">
+        <img class="tile-icon" src="imgs/icon_atividades.svg" alt="" aria-hidden="true">
+        <span class="tile-title">No resort</span>
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============== RSVP + PRESENTES ============== -->
+<section id="rsvp" class="rsvp dark">
+  <div class="rsvp-inner">
+    <div class="rsvp-col">
+      <p class="kicker">Confirme a sua</p>
+      <h2 class="section-title light">Presença</h2>
+      <svg class="rsvp-deco" viewBox="0 0 200 30" aria-hidden="true">
+        <path d="M0,15 C30,25 60,5 100,15 C140,25 170,5 200,15" fill="none" stroke="currentColor" stroke-width="0.8" opacity=".5"/>
+      </svg>
+      <p class="rsvp-text">
+        Queremos muito ter vocês com a gente. Pedimos a gentileza de confirmar a presença até <strong>30 dias antes</strong> da celebração para conseguirmos organizar todos os detalhes com carinho.
+      </p>
+      <a id="presentes" class="cta-btn" href="#" aria-disabled="true">Confirmar presença · em breve</a>
+    </div>
+
+    <div class="rsvp-divider" aria-hidden="true"></div>
+
+    <div class="rsvp-col">
+      <p class="kicker">Lista de</p>
+      <h2 class="section-title light">Presentes</h2>
+      <svg class="rsvp-deco" viewBox="0 0 200 30" aria-hidden="true">
+        <path d="M0,15 C30,5 60,25 100,15 C140,5 170,25 200,15" fill="none" stroke="currentColor" stroke-width="0.8" opacity=".5"/>
+      </svg>
+      <p class="rsvp-text">
+        O maior presente é poder celebrar esse momento com vocês. Para quem quiser nos presentear, criamos uma lista simbólica inspirada na nossa lua de mel e nos próximos capítulos da nossa vida juntos.
+      </p>
+      <a class="cta-btn" href="presentes.html" aria-disabled="false">Ver lista</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FOOTER ============== -->
+<footer class="footer paper">
+  <div class="footer-inner">
+    <img src="imgs/monogram.png" alt="LG" class="footer-mono-img">
+    <p class="footer-names">Lucas e Guilherme</p>
+    <p class="footer-date">10 de outubro de 2026 · Mangaratiba, RJ</p>
+    <img src="imgs/wave1_large.png" alt="" class="footer-wave" aria-hidden="true">
+  </div>
+</footer>
+
+<!-- ============== MODAIS ============== -->
+<div class="modal-backdrop" id="modal-backdrop" hidden></div>
+
+<div class="modal" id="modal-chegar" role="dialog" aria-modal="true" aria-labelledby="modal-chegar-title" hidden>
+  <div class="modal-paper paper">
+    <button class="modal-close" aria-label="Fechar">×</button>
+    <div>
+      <img class="modal-icon" src="imgs/icon_chegar_blue.svg" alt="" aria-hidden="true">
+    </div>
+    <p class="modal-kicker">— informação útil —</p>
+    <h3 class="modal-title" id="modal-chegar-title">Como chegar</h3>
+    <p class="modal-text"><p class="modal-text">Mangaratiba fica em um trechinho gostoso da Costa Verde fluminense, entre Angra e o Rio.</p>
+    <ul class="modal-list">
+      <li><strong>De São Paulo</strong> — cerca de 5h de carro pela via Dutra, descendo pela Rio–Santos.</li>
+      <li><strong>Do Aeroporto Santos Dumont (SDU)</strong> — aproximadamente 1h30 de carro.</li>
+      <li><strong>Do Aeroporto do Galeão (GIG)</strong> — também 1h30, pela BR-101.</li></p>
+      <li><strong>Transfer e caronas</strong> — recomendamos combinar grupos e transfers com antecedência, especialmente para quem chega pelos aeroportos do Rio.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="modal" id="modal-prewedding" role="dialog" aria-modal="true" aria-labelledby="modal-prewedding-title" hidden>
+  <div class="modal-paper paper">
+    <button class="modal-close" aria-label="Fechar">×</button>
+    <div>
+      <img class="modal-icon" src="imgs/icon_prewedding_blue.svg" alt="" aria-hidden="true">
+    </div>
+    <p class="modal-kicker">— a noite anterior —</p>
+    <h3 class="modal-title" id="modal-prewedding-title">Pré-wedding</h3>
+    <p class="modal-text">
+      Na noite anterior, vamos abrir o fim de semana com um drink no bar de frente para a praia — uma boa desculpa para a turma toda se conhecer com calma antes do grande dia.
+    </p>
+    <div class="modal-block">
+      <p class="modal-block-label">Traje</p>
+      <p class="modal-text">
+        Resort chiq. Eles podem ir de bermuda, desde que arrumadinhos. Elas, de vestido fluido ou outra roupa que combine com fim de tarde à beira-mar.
+      </p>
+    </div>
+    <p class="modal-text">
+      Depois do jantar, a festa segue com área VIP na balada do resort— então venham com energia.
+    </p>
+  </div>
+</div>
+
+<div class="modal" id="modal-hospedagem" role="dialog" aria-modal="true" aria-labelledby="modal-hospedagem-title" hidden>
+  <div class="modal-paper paper">
+    <button class="modal-close" aria-label="Fechar">×</button>
+    <div>
+      <img class="modal-icon" src="imgs/icon_hospedagem_blue.svg" alt="" aria-hidden="true">
+    </div>
+    <p class="modal-kicker">— onde ficar —</p>
+    <h3 class="modal-title" id="modal-hospedagem-title">Hospedagem</h3>
+    <p class="modal-text">
+      Nossa sugestão é se hospedar no <strong>Club Med Rio das Pedras</strong> para aproveitar o feriado em ritmo de mini-férias, com tudo incluso e várias atividades à disposição.
+    </p>
+    <p class="modal-text">
+      Se preferirem algo fora do resort, há boas opções em <strong>Mangaratiba</strong> e <strong>Angra dos Reis</strong>. A entrada no resort no dia do evento será liberada para todos os convidados.
+    </p>
+  </div>
+</div>
+
+<div class="modal" id="modal-cabelo" role="dialog" aria-modal="true" aria-labelledby="modal-cabelo-title" hidden>
+  <div class="modal-paper paper">
+    <button class="modal-close" aria-label="Fechar">×</button>
+    <div>
+      <img class="modal-icon" src="imgs/icon_cabelo_blue.svg" alt="" aria-hidden="true">
+    </div>
+    <p class="modal-kicker">— para se preparar —</p>
+    <h3 class="modal-title" id="modal-cabelo-title">Cabelo e make</h3>
+    <p class="modal-text">
+      Algumas opções para cabelo e maquiagem:
+    </p>
+    <div class="make-buttons">
+      <button class="ghost-btn" disabled>Profissional 1 · em breve</button>
+      <button class="ghost-btn" disabled>Profissional 2 · em breve</button>
+      <button class="ghost-btn" disabled>Profissional 3 · em breve</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="modal-atividades" role="dialog" aria-modal="true" aria-labelledby="modal-atividades-title" hidden>
+  <div class="modal-paper paper modal-wide">
+    <button class="modal-close" aria-label="Fechar">×</button>
+    <div>
+      <img class="modal-icon" src="imgs/icon_atividades_blue.svg" alt="" aria-hidden="true">
+    </div>
+    <p class="modal-kicker">— para o fim de semana —</p>
+    <h3 class="modal-title" id="modal-atividades-title">Atividades para todos</h3>
+    <p class="modal-text">
+      O Club Med é all-inclusive e oferece um cardápio enorme de atividades. Um resumo do que está à disposição:
+    </p>
+    <div class="activity-grid">
+      <div class="activity">
+        <p class="activity-label">Esportes aquáticos</p>
+        <p class="activity-text">Esqui aquático, wakeboard, caiaque, stand-up paddle e hidroginástica.</p>
+      </div>
+      <div class="activity">
+        <p class="activity-label">Esportes e aventura</p>
+        <p class="activity-text">Beach tennis, tênis, vôlei de praia, arco e flecha, futebol, basquete, slackline e trilhas ecológicas.</p>
+      </div>
+      <div class="activity">
+        <p class="activity-label">Bem-estar</p>
+        <p class="activity-text">Aulas de yoga (inclusive na praia), alongamento, piscina principal animada e piscina adulta mais calma. Spa com massagens (à parte).</p>
+      </div>
+      <div class="activity">
+        <p class="activity-label">Crianças e adolescentes</p>
+        <p class="activity-text">Mini Club Med+ (4 a 10 anos) com gincanas, arte e esportes; Junior Club Med (11 a 17) com programação própria, dança e noites temáticas.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============== SVG SYMBOLS ============== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="ginkgo" viewBox="0 0 100 100">
+      <g fill="none" stroke="currentColor" stroke-width="0.8" stroke-linecap="round">
+        <path d="M50,90 Q50,75 50,60"/>
+        <path d="M50,60 Q20,55 12,30 Q22,15 50,18 Q78,15 88,30 Q80,55 50,60"/>
+        <path d="M50,60 Q35,50 22,32"/>
+        <path d="M50,60 Q40,48 30,28"/>
+        <path d="M50,60 Q45,46 42,24"/>
+        <path d="M50,60 Q50,46 50,20"/>
+        <path d="M50,60 Q55,46 58,24"/>
+        <path d="M50,60 Q60,48 70,28"/>
+        <path d="M50,60 Q65,50 78,32"/>
+      </g>
+    </symbol>
+
+    <symbol id="palmscene" viewBox="0 0 400 120">
+      <g fill="none" stroke="currentColor" stroke-width="0.9" stroke-linecap="round">
+        <path d="M0,110 L400,110" opacity=".5"/>
+        <path d="M60,110 Q58,80 65,40"/>
+        <path d="M65,40 Q40,30 25,20"/>
+        <path d="M65,40 Q90,28 110,18"/>
+        <path d="M65,40 Q45,42 28,48"/>
+        <path d="M65,40 Q88,45 105,52"/>
+        <path d="M65,40 Q65,30 60,15"/>
+        <path d="M180,110 Q183,75 178,30"/>
+        <path d="M178,30 Q155,22 138,12"/>
+        <path d="M178,30 Q205,18 225,10"/>
+        <path d="M178,30 Q158,34 142,42"/>
+        <path d="M178,30 Q200,36 218,44"/>
+        <path d="M310,110 Q307,80 313,38"/>
+        <path d="M313,38 Q288,28 272,18"/>
+        <path d="M313,38 Q338,25 358,16"/>
+        <path d="M313,38 Q293,42 275,50"/>
+        <path d="M313,38 Q335,44 355,52"/>
+        <path d="M100,110 Q110,100 120,110"/>
+        <path d="M230,110 Q240,98 252,110"/>
+        <path d="M340,110 Q350,100 362,110"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<script src="script.js"></script>
+</body>
+</html>

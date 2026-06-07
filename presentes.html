@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lista de Presentes · Lucas e Guilherme</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Italiana&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============== NAV ============== -->
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-left">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#casamento">Casamento</a>
+      <a href="index.html#dicas">Dicas</a>
+    </div>
+    <a href="index.html" class="nav-monogram" aria-label="Lucas e Guilherme">
+      <img src="imgs/monogram.png" alt="LG" class="nav-mono-img">
+    </a>
+    <div class="nav-right">
+      <a href="index.html#rsvp">RSVP</a>
+      <a href="presentes.html" aria-current="page">Presentes</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============== HEADER ============== -->
+<section class="gifts-header paper">
+  <div class="gifts-header-inner">
+    <p class="kicker dark-kicker">Lista de</p>
+    <h1 class="section-title">Presentes</h1>
+
+    <div class="hero-rule small">
+      <span class="dot"></span>
+      <span class="line"></span>
+      <span class="dot"></span>
+    </div>
+
+    <p class="gifts-intro">
+      Mais do que objetos, escolhemos momentos. Cada presente é uma cena da lua de mel — um café, um drink, um pôr do sol — que vamos guardar com a gente, sabendo que veio de vocês.
+    </p>
+  </div>
+</section>
+
+<!-- ============== GRID DE CARDS ============== -->
+<section class="gifts-list paper">
+  <div class="gifts-list-inner">
+
+    <div class="gifts-grid">
+
+      <button class="gift-card" data-gift="cafe">
+        <span class="gift-card-icon">
+          <img src="imgs/gift_cafe.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'">
+          <span class="gift-card-fallback">✦</span>
+        </span>
+        <span class="gift-card-name">Café da manhã em Taormina</span>
+        <span class="gift-card-rule"></span>
+        <span class="gift-card-price">R$ 120</span>
+      </button>
+
+      <button class="gift-card" data-gift="aperitivo">
+        <span class="gift-card-icon">
+          <img src="imgs/gift_sunset.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'">
+          <span class="gift-card-fallback">✦</span>
+        </span>
+        <span class="gift-card-name">Aperitivo ao pôr do sol em Ortigia</span>
+        <span class="gift-card-rule"></span>
+        <span class="gift-card-price">R$ 180</span>
+      </button>
+
+      <button class="gift-card" data-gift="vinhos">
+        <span class="gift-card-icon">
+          <img src="imgs/gift_vinho.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'">
+          <span class="gift-card-fallback">✦</span>
+        </span>
+        <span class="gift-card-name">Vinhos do Etna</span>
+        <span class="gift-card-rule"></span>
+        <span class="gift-card-price">R$ 220</span>
+      </button>
+
+      <button class="gift-card" data-gift="vinicola">
+        <span class="gift-card-icon">
+          <img src="imgs/gift_vinicola.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'">
+          <span class="gift-card-fallback">✦</span>
+        </span>
+        <span class="gift-card-name">Passeio pelas vinícolas do Monte Etna</span>
+        <span class="gift-card-rule"></span>
+        <span class="gift-card-price">R$ 280</span>
+      </button>
+
+      <button class="gift-card" data-gift="jantar">
+        <span class="gift-card-icon">
+          <img src="imgs/gift_jantar.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'">
+          <span class="gift-card-fallback">✦</span>
+        </span>
+        <span class="gift-card-name">Jantar especial em Taormina</span>
+        <span class="gift-card-rule"></span>
+        <span class="gift-card-price">R$ 350</span>
+      </button>
+
+      <button class="gift-card" data-gift="massagem">
+        <span class="gift-card-icon">
+          <img src="imgs/gift_massagem.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'">
+          <span class="gift-card-fallback">✦</span>
+        </span>
+        <span class="gift-card-name">Massagem relaxante com vista para o mar</span>
+        <span class="gift-card-rule"></span>
+        <span class="gift-card-price">R$ 450</span>
+      </button>
+
+      <button class="gift-card" data-gift="tour-gastro">
+        <span class="gift-card-icon">
+          <img src="imgs/gift_gastronomia.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'">
+          <span class="gift-card-fallback">✦</span>
+        </span>
+        <span class="gift-card-name">Tour gastronômico pela Sicília</span>
+        <span class="gift-card-rule"></span>
+        <span class="gift-card-price">R$ 550</span>
+      </button>
+
+      <button class="gift-card" data-gift="barco">
+        <span class="gift-card-icon">
+          <img src="imgs/gift_barco.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'">
+          <span class="gift-card-fallback">✦</span>
+        </span>
+        <span class="gift-card-name">Passeio de barco pelas águas da Sicília</span>
+        <span class="gift-card-rule"></span>
+        <span class="gift-card-price">R$ 700</span>
+      </button>
+
+      <button class="gift-card" data-gift="diaria">
+        <span class="gift-card-icon">
+          <img src="imgs/gift_hotel.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'">
+          <span class="gift-card-fallback">✦</span>
+        </span>
+        <span class="gift-card-name">Diária em hotel boutique siciliano</span>
+        <span class="gift-card-rule"></span>
+        <span class="gift-card-price">R$ 850</span>
+      </button>
+
+      <button class="gift-card" data-gift="gastro-memo">
+        <span class="gift-card-icon">
+          <img src="imgs/gift_jantar.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'">
+          <span class="gift-card-fallback">✦</span>
+        </span>
+        <span class="gift-card-name">Experiência gastronômica memorável</span>
+        <span class="gift-card-rule"></span>
+        <span class="gift-card-price">R$ 1.200</span>
+      </button>
+
+      <button class="gift-card" data-gift="refugio">
+        <span class="gift-card-icon">
+          <img src="imgs/gift_four_seasons.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'">
+          <span class="gift-card-fallback">✦</span>
+        </span>
+        <span class="gift-card-name">Refúgio à beira-mar na lua de mel</span>
+        <span class="gift-card-rule"></span>
+        <span class="gift-card-price">R$ 2.000</span>
+      </button>
+
+      <button class="gift-card gift-card-free" data-gift="livre">
+        <span class="gift-card-icon">
+          <img src="imgs/gift_gift.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'">
+          <span class="gift-card-fallback">✦</span>
+        </span>
+        <span class="gift-card-name">Contribuir com outro valor</span>
+        <span class="gift-card-rule"></span>
+        <span class="gift-card-price">livre</span>
+      </button>
+
+    </div>
+
+    <p class="gifts-thanks">
+      Sua presença já é o presente que mais nos importa.<br>
+      <span class="gifts-thanks-sub">— L &amp; G</span>
+    </p>
+  </div>
+</section>
+
+<!-- ============== FOOTER ============== -->
+<footer class="footer paper">
+  <div class="footer-inner">
+    <img src="imgs/monogram.png" alt="LG" class="footer-mono-img">
+    <p class="footer-names">Lucas e Guilherme</p>
+    <p class="footer-date">10 de outubro de 2026 · Mangaratiba, RJ</p>
+  </div>
+</footer>
+
+<!-- ============== MODAL DE PAGAMENTO ============== -->
+<div class="modal-backdrop" id="modal-backdrop" hidden></div>
+
+<div class="modal" id="modal-gift" role="dialog" aria-modal="true" aria-labelledby="modal-gift-title" hidden>
+  <div class="modal-paper paper">
+    <button class="modal-close" aria-label="Fechar">×</button>
+
+    <p class="modal-kicker">— presente escolhido —</p>
+    <h3 class="modal-title" id="modal-gift-title">Café da manhã em Cala Brandinchi</h3>
+
+    <p class="gift-modal-price" id="modal-gift-price">R$ 120</p>
+
+    <div class="gift-modal-amount" id="modal-gift-amount" hidden>
+      <label for="gift-amount-input" class="gift-amount-label">valor</label>
+      <div class="gift-amount-wrap">
+        <span class="gift-amount-currency">R$</span>
+        <input type="number" id="gift-amount-input" min="10" step="10" placeholder="0,00" inputmode="decimal">
+      </div>
+    </div>
+
+    <div class="gift-modal-fields">
+      <div class="gift-field">
+        <label for="gift-name-input" class="gift-field-label">seu nome</label>
+        <input type="text" id="gift-name-input" class="gift-field-input" placeholder="como devemos te chamar" autocomplete="name" maxlength="100">
+        <span class="gift-field-count" id="gift-name-count" aria-live="polite">0/100</span>
+      </div>
+      <div class="gift-field">
+        <label for="gift-message-input" class="gift-field-label">mensagem (opcional)</label>
+        <textarea id="gift-message-input" class="gift-field-input gift-field-textarea" rows="3" placeholder="um recado curtinho pra gente" maxlength="2000"></textarea>
+        <span class="gift-field-count" id="gift-message-count" aria-live="polite">0/2000</span>
+      </div>
+    </div>
+
+    <p class="modal-text gift-modal-text">
+      Ao clicar em PIX ou Cartão, sua mensagem é enviada para nós junto com o pagamento. Tudo é processado com segurança pelo Mercado Pago.
+    </p>
+
+    <div class="gift-payment-buttons">
+      <a class="gift-pay-btn gift-pay-pix" id="gift-pay-pix" href="#" target="_blank" rel="noopener" aria-disabled="true">
+        <span class="gift-pay-label">PIX</span>
+        <span class="gift-pay-sub">à vista</span>
+      </a>
+      <a class="gift-pay-btn gift-pay-card" id="gift-pay-card" href="#" target="_blank" rel="noopener" aria-disabled="true">
+        <span class="gift-pay-label">Cartão</span>
+        <span class="gift-pay-sub">parcelado em até 12x</span>
+      </a>
+    </div>
+
+    <p class="modal-hint" id="gift-modal-hint">
+      Preencha seu nome para liberar os botões de pagamento.
+    </p>
+  </div>
+</div>
+
+<script src="presentes.js"></script>
+</body>
+</html>
