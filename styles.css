@@ -1590,17 +1590,15 @@ body.modal-open { overflow: hidden; }
 }
 
 /* ---------- Painel PIX (QR + copia e cola) ---------- */
-.gift-pix-panel {
-  margin-bottom: 18px;
-}
-.gift-pix-title {
+.gift-pix-gift {
   font-family: var(--font-display);
-  font-size: 22px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--teal);
+  font-weight: 400;
+  font-size: 26px;
+  color: var(--deep);
   text-align: center;
-  margin: 0 0 20px;
+  margin: 0 0 22px;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
 }
 .gift-pix-options {
   display: flex;
@@ -1621,13 +1619,11 @@ body.modal-open { overflow: hidden; }
   letter-spacing: 0.04em;
 }
 .gift-pix-qr {
-  width: 200px;
-  height: 200px;
-  object-fit: contain;
-  border: 1px solid rgba(33, 114, 128, 0.2);
-  border-radius: 8px;
-  background: #fff;
-  padding: 8px;
+  width: 240px;
+  height: auto;
+  display: inline-block;
+  /* funde o fundo branco do JPEG com o creme do modal */
+  mix-blend-mode: multiply;
 }
 .gift-pix-divider {
   display: flex;

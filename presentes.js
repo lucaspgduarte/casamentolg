@@ -74,8 +74,9 @@
   const msgCount   = document.getElementById('gift-message-count');
   const pixBtn     = document.getElementById('gift-pay-pix');
   const cardBtn    = document.getElementById('gift-pay-card');
-  const payButtons = document.getElementById('gift-payment-buttons');
+  const formScreen = document.getElementById('gift-form-screen');
   const pixPanel   = document.getElementById('gift-pix-panel');
+  const pixGiftEl  = document.getElementById('gift-pix-gift');
   const pixQRImg   = document.getElementById('gift-pix-qr');
   const pixCodeEl  = document.getElementById('gift-pix-code');
   const pixCopyBtn = document.getElementById('gift-pix-copy');
@@ -86,8 +87,7 @@
 
   function hidePixPanel() {
     pixPanel.hidden = true;
-    payButtons.hidden = false;
-    hintEl.hidden = false;
+    formScreen.hidden = false;
     pixCopyBtn.textContent = 'Copiar código';
     pixCopyBtn.classList.remove('is-copied');
   }
@@ -97,12 +97,14 @@
       hintEl.textContent = 'O PIX deste presente ainda está sendo preparado. Use o cartão ou tente novamente em breve.';
       return;
     }
+    const valor = getValor();
+    pixGiftEl.textContent = currentGift.name + ' · R$ ' + valor.toLocaleString('pt-BR');
     pixQRImg.src = currentGift.pixQR || '';
     pixQRImg.style.display = currentGift.pixQR ? '' : 'none';
     pixCodeEl.textContent = currentGift.pixCode;
-    payButtons.hidden = true;
-    hintEl.hidden = true;
+    formScreen.hidden = true;
     pixPanel.hidden = false;
+    pixPanel.parentElement.scrollTop = 0;
   }
 
   function updateCounts() {
