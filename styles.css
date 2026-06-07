@@ -33,7 +33,7 @@ body {
   background: var(--cream);
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
-  font-size: clamp(16px, 4.6vw, 22.5px);
+  font-size: clamp(13.5px, 3.6vw, 22.5px);
 }
 
 /* ============================================
@@ -270,6 +270,8 @@ body {
   transition: opacity 1.5s ease-in-out;
 }
 .hero-slide.is-active { opacity: 1; }
+/* foto vertical: ancora mais embaixo para nao cortar o casal */
+.hero-slide-couple { background-position: center 78%; }
 
 .hero-dots {
   position: absolute;
