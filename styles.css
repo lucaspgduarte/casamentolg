@@ -546,6 +546,15 @@ body {
   margin: 0;
 }
 
+.time-note {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-weight: 300;
+  font-size: 18px;
+  color: var(--ink-soft);
+  margin: 4px 0 0;
+}
+
 .venue-name {
   font-family: var(--font-display);
   font-size: clamp(27.5px, 2.8vw, 37.5px);
@@ -1032,6 +1041,29 @@ body {
   cursor: not-allowed;
   font-style: italic;
   text-align: center;
+}
+
+.modal-link {
+  color: var(--teal);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(33, 114, 128, 0.4);
+  transition: color .2s ease, border-color .2s ease;
+}
+.modal-link:hover {
+  color: var(--deep);
+  border-color: var(--deep);
+}
+
+.modal-note {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-weight: 300;
+  font-size: 16px;
+  color: var(--ink-soft);
+  line-height: 1.5;
+  margin: 14px 0 0;
+  position: relative;
+  z-index: 2;
 }
 
 @media (max-width: 720px) {
