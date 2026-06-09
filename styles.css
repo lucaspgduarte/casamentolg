@@ -1011,27 +1011,77 @@ body {
   margin: 0;
 }
 
-.make-buttons {
+.make-cards {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  margin-top: 12px;
+  gap: 10px;
+  margin-top: 16px;
   position: relative;
   z-index: 2;
 }
 
-.ghost-btn {
-  background: transparent;
-  border: 1px dashed rgba(33, 114, 128, 0.5);
-  color: var(--teal);
+.make-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 18px;
+  background: rgba(33, 114, 128, 0.05);
+  border-left: 2px solid var(--teal);
+}
+
+.make-card-info { min-width: 0; }
+
+.make-card-name {
+  font-family: var(--font-display);
+  font-size: 19px;
+  letter-spacing: 0.04em;
+  color: var(--deep);
+  margin: 0;
+}
+
+.make-card-loc {
   font-family: var(--font-body);
-  font-size: 14.5px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  padding: 10px 16px;
-  cursor: not-allowed;
   font-style: italic;
-  text-align: center;
+  font-weight: 300;
+  font-size: 15.5px;
+  color: var(--ink-soft);
+  margin: 2px 0 0;
+}
+
+.make-contact {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 1px solid var(--teal);
+  color: var(--teal);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .25s ease, color .25s ease;
+}
+.make-contact:hover {
+  background: var(--teal);
+  color: var(--cream);
+}
+.make-contact svg {
+  width: 21px;
+  height: 21px;
+  display: block;
+}
+
+.make-card-soon {
+  border-left-style: dashed;
+  border-left-color: rgba(33, 114, 128, 0.45);
+  background: rgba(33, 114, 128, 0.025);
+}
+.make-card-soon .make-card-name { color: var(--ink-soft); }
+.make-card-soon .make-card-loc {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-style: normal;
+  font-size: 13px;
 }
 
 .modal-note {
@@ -1745,7 +1795,6 @@ body.modal-open { overflow: hidden; }
   .activity-label  { font-size: 19px; }
   .link-pill       { font-size: 14.5px; }
   .cta-btn         { font-size: 14.5px; }
-  .ghost-btn       { font-size: 15.5px; }
   .tile-title      { font-size: 16px; }
   .footer-date     { font-size: 17px; }
   .gift-pay-label  { font-size: 20px; }
