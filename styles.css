@@ -1034,17 +1034,6 @@ body {
   text-align: center;
 }
 
-.modal-link {
-  color: var(--teal);
-  text-decoration: none;
-  border-bottom: 1px solid rgba(33, 114, 128, 0.4);
-  transition: color .2s ease, border-color .2s ease;
-}
-.modal-link:hover {
-  color: var(--deep);
-  border-color: var(--deep);
-}
-
 .modal-note {
   font-family: var(--font-body);
   font-style: italic;
