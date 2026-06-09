@@ -1071,18 +1071,6 @@ body {
   display: block;
 }
 
-.make-card-soon {
-  border-left-style: dashed;
-  border-left-color: rgba(33, 114, 128, 0.45);
-  background: rgba(33, 114, 128, 0.025);
-}
-.make-card-soon .make-card-name { color: var(--ink-soft); }
-.make-card-soon .make-card-loc {
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  font-style: normal;
-  font-size: 13px;
-}
 
 .modal-note {
   font-family: var(--font-body);
