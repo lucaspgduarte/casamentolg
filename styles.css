@@ -321,29 +321,45 @@ body {
   pointer-events: none;
 }
 
-/* folhas decorativas no hero */
+/* folhas decorativas — line-art botânico, tingido pela paleta via currentColor */
 .leaf {
   position: absolute;
   pointer-events: none;
+  display: block;
+  height: auto;
 }
 .hero-leaf-1 {
-  width: 130px;
-  top: 8%;
-  left: 4%;
+  width: 170px;
+  top: 5%;
+  left: 2%;
   color: var(--sage);
-  opacity: .35;
-  transform: rotate(-22deg);
+  opacity: .34;
+  transform: rotate(-12deg);
 }
 .hero-leaf-2 {
-  width: 100px;
-  bottom: 12%;
-  right: 6%;
+  width: 150px;
+  bottom: 9%;
+  right: 4%;
+  color: var(--teal);
+  opacity: .20;
+  transform: rotate(26deg);
+}
+.leaf-corner-tl {
+  width: 150px;
+  top: 22px;
+  left: 26px;
+  color: var(--sage);
+  opacity: .30;
+  transform: rotate(-16deg);
+}
+.leaf-corner-br {
+  width: 125px;
+  bottom: 60px;
+  right: 26px;
   color: var(--teal);
   opacity: .22;
-  transform: rotate(40deg);
+  transform: rotate(165deg);
 }
-.leaf-corner-tl { width: 130px; top: 32px; left: 32px; color: var(--sage); opacity: .35; transform: rotate(-22deg); }
-.leaf-corner-br { width: 130px; bottom: 80px; right: 32px; color: var(--teal); opacity: .25; transform: rotate(140deg); }
 
 /* Hero responsivo: mobile vira stack */
 @media (max-width: 960px) {
