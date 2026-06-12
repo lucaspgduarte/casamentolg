@@ -401,6 +401,33 @@ body {
 
 .welcome { padding: 120px 24px; }
 
+/* onda decorativa: nasce sob as fotos (topo-direita) e dissolve em todas as direcoes, tom sobre tom */
+.welcome-wave {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 620px;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+  -webkit-mask-image: radial-gradient(135% 125% at 100% 0%, #000 16%, transparent 66%);
+          mask-image: radial-gradient(135% 125% at 100% 0%, #000 16%, transparent 66%);
+}
+.welcome-wave img {
+  position: absolute;
+  top: -140px;
+  right: -200px;
+  width: 780px;
+  height: auto;
+  opacity: .4;
+  transform: scaleX(-1) rotate(132deg) scaleY(1.33);
+}
+@media (max-width: 720px) {
+  .welcome-wave { width: 320px; }
+  .welcome-wave img { width: 460px; top: -90px; right: -120px; opacity: .32; }
+}
+
 .welcome-inner {
   max-width: 720px;
   margin: 0 auto;
