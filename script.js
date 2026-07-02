@@ -19,7 +19,7 @@
     const now = Date.now();
     let diff = target - now;
     if (diff <= 0) {
-      elDays.textContent  = '000';
+      elDays.textContent  = '00';
       elHours.textContent = '00';
       elMin.textContent   = '00';
       elSec.textContent   = '00';
@@ -33,7 +33,7 @@
     diff -= mins * 60000;
     const secs  = Math.floor(diff / 1000);
 
-    elDays.textContent  = pad(days, 3);
+    elDays.textContent  = pad(days, days >= 100 ? 3 : 2);
     elHours.textContent = pad(hours, 2);
     elMin.textContent   = pad(mins, 2);
     elSec.textContent   = pad(secs, 2);
