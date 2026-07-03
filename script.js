@@ -4,7 +4,7 @@
 
 (function () {
   // ---------- Countdown ----------
-  const target = new Date('2026-10-10T15:30:00-03:00').getTime();
+  const target = new Date('2026-10-10T15:00:00-03:00').getTime();
 
   const elDays  = document.getElementById('cd-days');
   const elHours = document.getElementById('cd-hours');
